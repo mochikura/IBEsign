@@ -12,8 +12,21 @@
         使用するID <input type="text" name="userID" value="b1000000@fun.ac.jp"><br>
         メッセージ <textarea name="msg"></textarea><br>
         <button type="text" onclick="KeyGen()">generate key</button><br>
-        <span name="IDshow"></span><br>
+        <span name="IDshow">キーを入力してください</span><br>
         <span name="status"></span><br>
         <span name="msgshow"></span><br>
+        秘密鍵：<span name="secretkey">null</span><br>
+        公開鍵：<span name="publickey">null</span><br><br>
+        <button type="text" onclick="SignGen()">generate sign</button><br>
+        <span name="signgen">まだ署名生成していません</span><br>
+        送信<br>
+        ・本文：<span name="sendmsg"></span><br>
+        ・署名：<span name="sendsign"></span><br><br>
+
+        受信<br>
+        ・本文：<span name="recvmsg"></span><br>
+        ・署名：<span name="recvsign"></span><br>
+
+        <span name="signvery">まだ署名検証していません</span><br>
     </body>
 </html>
